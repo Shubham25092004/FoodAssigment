@@ -1,18 +1,18 @@
-import { useState } from 'react'
-
 import './App.css'
 import FirstNav from './compounts/FirstNav'
+import HoneyCard from './compounts/HoneyCard.jsx'
 import Navbar from './compounts/Navbar'
+import { category } from './data/category.js'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <FirstNav/>
-    <Navbar/>
+   
+      <FirstNav />
+      <Navbar Data={category} />
+      <HoneyCard/>
     </>
   )
 }
 
-export default App
+export default App;

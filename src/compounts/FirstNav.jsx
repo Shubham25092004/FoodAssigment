@@ -2,6 +2,7 @@ import React from 'react'
 import FoodImg from "../assets/food.png";
 import { FaRegUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
+import { IoSearchOutline } from "react-icons/io5";
 
 
 const FirstNav = () => {
@@ -32,15 +33,20 @@ const FirstNav = () => {
             placeholder="Search for more than 20,000 prouducts"
             aria-label="Search"
           />
+          
       
         </form>
-   
+    
 
         <ul className='d-flex justify-content-end list-unstyled m-0'>
           <li> 
     </li>
 
         </ul>
+        <IoSearchOutline  size={25}  />
+
+        
+        
       </div>
     </nav>
     <div className='px-5'>
@@ -50,11 +56,14 @@ const FirstNav = () => {
    
    </div>
    <div className="d-flex justify-content-end align-items-center bg-light p-3">
-    <FaRegUser size={25} className='me-4'  />
+    <FaRegUser size={25} className='me-4' />
     <FaRegHeart size={25} />
 
    </div>
-
+    <div className="text-end me-4">
+          <p className="mb-0 fw-semibold">Your Cart</p>
+          <h5 className="mb-0 text-dark">$1290.00</h5>
+        </div>
 
     </div>
   )
