@@ -1,0 +1,19 @@
+.category-card {
+  border-radius: 16px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.category-card img {
+  transition: 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.12);
+}
